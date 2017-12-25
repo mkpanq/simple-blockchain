@@ -5,6 +5,11 @@ import lombok.Getter;
 
 import java.nio.charset.StandardCharsets;
 
+/**
+ * In this project I used Sha256 for all hashing operations. Used Guava library from Google.
+ * During object creation, constructor automatically hash input string and keep it in hashedString variable.
+ * I get to the output variable by getter, created automatically by Lombok.
+ */
 @Getter
 public class ShaHash {
 

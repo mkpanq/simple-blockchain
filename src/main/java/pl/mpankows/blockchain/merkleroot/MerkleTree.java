@@ -8,6 +8,14 @@ import java.util.List;
 import java.util.zip.Adler32;
 
 /**
+ * This class was taken from https://github.com/quux00.
+ * I modified it a bit (delete some unused methods, add Lombok implementation) for the needs of this project.
+ * All main methods and comments to them were written by quux00
+ *
+ * mpankows
+ */
+
+/**
  * MerkleTree is an implementation of a Merkle binary hash tree where the leaves
  * are signatures (hashes, digests, CRCs, etc.) of some underlying data structure
  * that is not explicitly part of the tree.
@@ -164,6 +172,7 @@ public class MerkleTree {
      * Internal Nodes will have at least one child (always on the left).
      * Leaf Nodes will have no children (left = right = null).
      */
+
     @Getter
     static public class Node {
         private byte type;  // INTERNAL_SIG_TYPE or LEAF_SIG_TYPE
