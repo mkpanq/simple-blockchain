@@ -11,7 +11,7 @@ public class App {
 
         final int GENESIS_BLOCK_NUMBER = 1; //number of first block
         final int DIFFICULTY = 3; //required amount of zeros at the beginning of valid hash
-        final int MAX_BLOCKS_AMOUNT = 10; //amount of blocks in chain
+        final int MAX_BLOCKS_AMOUNT = 5; //amount of blocks in chain
 
         //Transaction list - here are four, example strings
         List<String> transactionList = Arrays.asList(

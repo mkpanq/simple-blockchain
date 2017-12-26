@@ -39,7 +39,7 @@ public class Simulation {
             previousBlock = block;
 
             System.out.println(
-                    "Generating next Block...\n" +
+                    "New Block added:\n" +
                             "Block number: " + blockNumber + "\n" +
                             "Timestamp: " + block.getTimestamp() + "\n" +
                             "Previous hash: " + block.getPrevHashString() + "\n" +
@@ -62,7 +62,7 @@ public class Simulation {
                 transactionList);
 
         System.out.println(
-                "Generating Genesis Block...\n" +
+                "Genesis Block:\n" +
                         "Block number: " + blockNumber + "\n" +
                         "Timestamp: " + genesisBlock.getTimestamp() + "\n" +
                         "Previous hash: " + genesisPrevHashString + "\n" +
